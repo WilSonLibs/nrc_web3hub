@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "utils/solana.js", "utils/hash.js", "pages/verify.js", "pages/index.js", "pages/api/register.js", "lib/solanaClient.js", "hooks/useSolana.js", "config/config.js", "components/VeryficationForm.js", "components/NRCForm.js", "components/Navbar.js"],
+  "exclude": ["node_modules"]
+}
